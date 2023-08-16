@@ -1,0 +1,203 @@
+/* Reset de estilos básicos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+/* Barra de navegación */
+.navbar {
+    text-align: center;
+    background-color: #000;
+    padding: 10px 0;
+}
+
+.navbar ul {
+    list-style: none;
+}
+
+.navbar li {
+    display: inline;
+    margin: 0 20px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #ffcc00; /* Amarillo */
+}
+
+/* Encabezado */
+.hero {
+    text-align: center;
+    background-image: url(../img/Banner.jpg);
+    background-size: cover;
+    padding: 100px 0;
+    color: #fff;
+}
+
+/* Calculadora */
+.calculator {
+    text-align: center;
+    margin: 50px auto;
+    padding: 20px;
+    max-width: 400px;
+    background-color: #000;
+    color: #ffcc00;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.calculator:hover {
+    transform: scale(1.02);
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+}
+
+.calculator h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.calculator label, .calculator input, .calculator button {
+    display: block;
+    margin-bottom: 10px;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ffcc00;
+    border-radius: 5px;
+    transition: border-color 0.3s;
+}
+
+.calculator label, .calculator button {
+    font-weight: bold;
+}
+
+.calculator input:focus, .calculator button:hover {
+    border-color: #fff;
+}
+
+
+/* Animación al desplazarse */
+.animate {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 1s, transform 1s;
+}
+
+/* Efectos de hover */
+button:hover {
+    background-color: #000;
+    color: #ffcc00;
+}
+
+/* Formulario interactivo */
+.calculator label, .calculator input, .calculator button {
+    transition: border-color 0.3s;
+}
+
+/* Estilos para las imágenes */
+.imagenes-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px;
+  }
+  
+  .imagen {
+    width: calc(33.33% - 10px); 
+    margin: 5px;
+  }
+  
+  .imagen img {
+    width: 100%;
+    height: auto;
+  }
+
+  .horario {
+    text-align: center;
+
+  }
+
+.calculator input:focus {
+    border-color: #ffcc00;
+}
+
+.productos-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+  }
+  
+  .titulo2 {
+    text-align: center;
+    color: #000;
+  }
+  
+  .producto {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+    width: calc(33.33% - 20px); 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .producto img {
+    max-width: 100px;
+  }
+  
+  .carrito {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .lista-carrito {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .lista-carrito li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5px 0;
+  }
+  
+  .vaciar-carrito {
+    background-color: #ff4444;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  
+  
+
+/* Pie de página */
+.footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #000;
+    color: #fff;
+}
+
+/* Media queries para diseño responsivo */
+@media screen and (max-width: 768px) {
+    .navbar li {
+        margin: 0 10px;
+    }
+
+    .calculator {
+        padding: 10px;
+    }
+}
